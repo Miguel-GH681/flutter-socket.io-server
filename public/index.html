@@ -21,9 +21,11 @@
 
         client.on('mensaje', (payload)=>{
             console.log(payload);
-        })
+        });
 
-        client.emit('mensaje', { nombre: 'Alvaro' });
+        client.on('nuevo-mensaje', (payload)=>{
+            console.log(payload);
+        })
     </script>
 </body>
 </html>
