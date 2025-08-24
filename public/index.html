@@ -23,9 +23,10 @@
             console.log(payload);
         });
 
-        client.on('nuevo-mensaje', (payload)=>{
-            console.log(payload);
-        })
+        client.on('active-bands', (payload)=>{
+            console.clear();
+            console.table(payload);
+        });
     </script>
 </body>
 </html>
